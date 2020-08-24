@@ -1,0 +1,23 @@
+{
+  "name": "mometest",
+  "version": "1.0.0",
+  "description": "juego de la memoria",
+  "main": "memotest.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franco646/mometest.git"
+  },
+  "author": "franco DL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franco646/mometest/issues"
+  },
+  "homepage": "https://github.com/franco646/mometest#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1"
+  }
+}
