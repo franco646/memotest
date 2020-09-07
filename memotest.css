@@ -1,0 +1,45 @@
+#empezar {
+    margin-top: 8px;
+}
+
+.cuadro {
+    margin-top: 10%;
+    height: 25vh;
+}
+
+.oculto {
+    background-color: gray !important; 
+}
+
+.color-1 {
+    background-color: red;
+}
+
+.color-2 {
+    background-color: green;
+}
+
+.color-3 {
+    background-color: blue;
+}
+
+.color-4 {
+    background-color: violet;
+}
+
+.color-5 {
+    background-color: yellow;
+}
+
+.color-6 {
+    background-color: purple;
+}
+
+.color-7 {
+    background-color: brown;
+}
+
+.color-8 {
+    background-color: cyan;
+}
+
