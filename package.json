@@ -4,8 +4,9 @@
   "description": "juego de la memoria",
   "main": "memotest.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:run": "cypress run",
+    "start-server": "http-server -c-1",
+    "test": "cypress run",
+    "ci": "start-server-and-test start-server http://localhost:8080 test",
     "cypress-dev": "cypress open"
   },
   "repository": {
@@ -24,6 +25,7 @@
     "jquery": "^3.5.1"
   },
   "devDependencies": {
-    "cypress": "^5.1.0"
+    "cypress": "^5.1.0",
+    "start-server-and-test": "^1.12.0"
   }
 }
