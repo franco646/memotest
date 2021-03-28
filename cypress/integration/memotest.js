@@ -1,8 +1,6 @@
 
-const URL = "http://192.168.0.6:8080/memotest.html";
+const URL = "http://192.168.0.6:8080";
 const NUMERO_CUADROS = 16;
-
-
 
 context("memotest", () => {
     before(() => {
