@@ -5,7 +5,7 @@ juego de memoria creado con JavaScript y bootstrap.
 
 _Puede ver una demostración en vivo de esta aplicación en el siguiente link:._
 
-https://trivia-franco.herokuapp.com/
+https://franco646.github.io/memotest/
 
 ### Instalación y ejecución 🔧
 
