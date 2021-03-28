@@ -9,7 +9,7 @@ https://franco646.github.io/memotest/
 
 ### Instalación y ejecución 🔧
 
-_Para correr la aplicación de manera local siga las instrucciones. _
+_Para correr la aplicación de manera local siga las instrucciones._
 
 #### 1. Instalar dependencias.
 ```
