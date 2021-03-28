@@ -3,7 +3,7 @@ juego de memoria creado con JavaScript y bootstrap.
 
 ## Introducción 🚀
 
-_Puede ver una demostración en vivo de esta aplicación en el siguiente link:._
+_Puede ver una demostración en vivo de esta aplicación en el siguiente link:_
 
 https://franco646.github.io/memotest/
 
