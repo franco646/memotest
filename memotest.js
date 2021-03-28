@@ -1,12 +1,13 @@
 
 bloquearInputUsuario();
 let eleccionJugador = [];
-let intentos = [];
+let intentos = 0;
 
 const $botonEmpezar = document.querySelector("#empezar");
 $botonEmpezar.onclick = function(){
     eleccionJugador = []
-    intentos = []
+    intentos = 0
+    document.querySelector("#intentos").textContent = "intentos " + intentos
     document.querySelector("#estado").textContent = "En juego!"
     document.querySelector("#empezar").className = "btn btn-primary"
     document.querySelector("#empezar").textContent = "Reiniciar"
@@ -50,7 +51,9 @@ function desbloquearInputUsuario(){
 
 function manejarClickCuadro(e){
     cuadro = e.target;
-    eleccionJugador.push(cuadro)
+    if(cuadro.className.includes('color')){
+        eleccionJugador.push(cuadro)
+    }
 
     mostrarCuadro(cuadro);
 
@@ -72,16 +75,16 @@ function verificarCoincidencia(){
     const cuadroDos = eleccionJugador[1];
     
     if (cuadroUno.className === cuadroDos.className && cuadroUno.id != cuadroDos.id){
-        setTimeout(function(){
-            borrarCuadro(cuadroUno, cuadroDos)
-        }, 500);
+            setTimeout(function(){
+                borrarCuadro(cuadroUno, cuadroDos)
+            }, 500);
     }else if (cuadroUno.className === cuadroDos.className){
-        eleccionJugador.pop();
-        desbloquearInputUsuario();
+            eleccionJugador.pop();
+            desbloquearInputUsuario();
     }else {
-        setTimeout(function(){
-            ocultarCuadros(cuadroUno, cuadroDos)
-        }, 500);
+            setTimeout(function(){
+                ocultarCuadros(cuadroUno, cuadroDos)
+            }, 500);
     }
 
 }
@@ -118,6 +121,6 @@ function ganar(){
 }
 
 function actualizarIntentos(){
-    intentos.push(1);
-    document.querySelector("#intentos").textContent = "intentos " + intentos.length
+    intentos = intentos + 1;
+    document.querySelector("#intentos").textContent = "intentos " + intentos
 }
